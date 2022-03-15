@@ -10,6 +10,8 @@ class HomePageTwo extends StatefulWidget {
 class _HomePageTwoState extends State<HomePageTwo> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return  Scaffold(
+      appBar: AppBar(),
+    );
   }
 }

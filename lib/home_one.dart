@@ -25,7 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.home,
                   color: currentPage == 0
-                      ? const Color.fromARGB(203, 73, 101, 1)
+                      ? const Color.fromRGBO(203, 73, 101, 1)
                       : const Color.fromRGBO(40, 40, 40, 1),
                 )),
             const Spacer(),
@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.search,
                   color: currentPage == 1
-                      ? const Color.fromARGB(203, 73, 101, 1)
+                      ? const Color.fromRGBO(203, 73, 101, 1)
                       : const Color.fromRGBO(40, 40, 40, 1),
                 )),
             const Spacer(),
