@@ -10,8 +10,12 @@ class HomePageTwo extends StatefulWidget {
 class _HomePageTwoState extends State<HomePageTwo> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      appBar: AppBar(),
+    return Scaffold(
+      appBar: AppBar(
+        title: SizedBox(
+          child: Image.asset("images/instagram.jpg"),
+        ),
+      ),
     );
   }
 }
