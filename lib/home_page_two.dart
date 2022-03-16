@@ -16,9 +16,15 @@ class _HomePageTwoState extends State<HomePageTwo> {
           child: Image.asset(
             "images/instagram.jpg",
             height: 100,
-            width: 100,
+            width: 150,
           ),
         ),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.add_circle)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.favorite_border)),
+          IconButton(
+              onPressed: () {}, icon: const Icon(Icons.chat_bubble_outline)),
+        ],
       ),
     );
   }
