@@ -43,11 +43,43 @@ class _MyHomePageState extends State<MyHomePage> {
                 )),
             const Spacer(),
             IconButton(
-                onPressed: () {}, icon: const Icon(Icons.ondemand_video)),
+                onPressed: () {
+                  setState(() {
+                    currentPage = 2;
+                  });
+                },
+                icon: Icon(
+                  Icons.ondemand_video,
+                  color: currentPage == 2
+                      ? const Color.fromRGBO(203, 73, 101, 1)
+                      : const Color.fromRGBO(40, 40, 40, 1),
+                )),
             const Spacer(),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.card_travel)),
+            IconButton(
+                onPressed: () {
+                  setState(() {
+                    currentPage = 3;
+                  });
+                },
+                icon: Icon(
+                  Icons.card_travel,
+                  color: currentPage == 3
+                      ? const Color.fromRGBO(203, 73, 101, 1)
+                      : const Color.fromRGBO(40, 40, 40, 1),
+                )),
             const Spacer(),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.person)),
+            IconButton(
+                onPressed: () {
+                  setState(() {
+                    currentPage = 4;
+                  });
+                },
+                icon: Icon(
+                  Icons.person,
+                  color: currentPage == 4
+                      ? const Color.fromRGBO(203, 70, 101, 1)
+                      : const Color.fromRGBO(40, 40, 40, 1),
+                )),
             const Spacer(),
           ],
         ),

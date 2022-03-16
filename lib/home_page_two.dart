@@ -13,7 +13,11 @@ class _HomePageTwoState extends State<HomePageTwo> {
     return Scaffold(
       appBar: AppBar(
         title: SizedBox(
-          child: Image.asset("images/instagram.jpg"),
+          child: Image.asset(
+            "images/instagram.jpg",
+            height: 100,
+            width: 100,
+          ),
         ),
       ),
     );
