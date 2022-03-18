@@ -8,6 +8,16 @@ class HomePageTwo extends StatefulWidget {
 }
 
 class _HomePageTwoState extends State<HomePageTwo> {
+  List<String> profileImages = [
+    " images/g2.jpg",
+    " images/g3.jpg",
+    " images/g4.jpg",
+    " images/g5.jpg",
+    " images/g6.jpg",
+    " images/Girl-DP.jpg",
+    " images/s1.jpg",
+    " images/s2.jpg",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +54,25 @@ class _HomePageTwoState extends State<HomePageTwo> {
                       8,
                       (index) => Container(
                           padding: const EdgeInsets.all(10),
-                          child: const CircleAvatar()))),
+                          child: Column(
+                            children: [
+                              CircleAvatar(
+                                radius: 35,
+                                backgroundImage:
+                                    const AssetImage("images/pink.png"),
+                                child: CircleAvatar(
+                                  radius: 32,
+                                  backgroundImage:
+                                      AssetImage(profileImages[index]),
+                                ),
+                              ),
+                              const Text(
+                                "Profile Name",
+                                style: TextStyle(
+                                    fontSize: 13, color: Colors.black87),
+                              ),
+                            ],
+                          )))),
             ),
           ],
         ),
