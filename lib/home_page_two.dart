@@ -66,6 +66,9 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                       AssetImage(profileImages[index]),
                                 ),
                               ),
+                              const SizedBox(
+                                height: 5,
+                              ),
                               const Text(
                                 "Profile Name",
                                 style: TextStyle(
@@ -74,6 +77,7 @@ class _HomePageTwoState extends State<HomePageTwo> {
                             ],
                           )))),
             ),
+            const Divider(),
           ],
         ),
       ),
