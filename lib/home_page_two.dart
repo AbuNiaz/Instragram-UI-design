@@ -78,6 +78,29 @@ class _HomePageTwoState extends State<HomePageTwo> {
                           )))),
             ),
             const Divider(),
+            Column(
+                children: List.generate(
+                    8,
+                    (index) => Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.all(10),
+                                  child: CircleAvatar(
+                                      radius: 32,
+                                      backgroundImage:
+                                          AssetImage(profileImages[index])),
+                                ),
+                                const Text("Profile Name"),
+                                const Spacer(),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(Icons.more_vert))
+                              ],
+                            )
+                          ],
+                        )))
           ],
         ),
       ),
