@@ -9,14 +9,14 @@ class HomePageTwo extends StatefulWidget {
 
 class _HomePageTwoState extends State<HomePageTwo> {
   List<String> profileImages = [
-    " images/g2.jpg",
-    " images/g3.jpg",
-    " images/g4.jpg",
-    " images/g5.jpg",
-    " images/g6.jpg",
-    " images/Girl-DP.jpg",
-    " images/s1.jpg",
-    " images/s2.jpg",
+    "images/g2.jpg",
+    "images/g3.jpg",
+    "images/g4.jpg",
+    "images/g5.jpg",
+    "images/g6.jpg",
+    "images/Girl-DP.jpg",
+    "images/s1.jpg",
+    "images/s2.jpg",
   ];
   @override
   Widget build(BuildContext context) {
@@ -98,7 +98,8 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                     onPressed: () {},
                                     icon: const Icon(Icons.more_vert))
                               ],
-                            )
+                            ),
+                            Image.asset("images/s2.jpg")
                           ],
                         )))
           ],

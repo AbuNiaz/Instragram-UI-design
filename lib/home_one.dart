@@ -11,7 +11,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: HomePageTwo(),
+      body: const HomePageTwo(),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
