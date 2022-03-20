@@ -99,7 +99,25 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                     icon: const Icon(Icons.more_vert))
                               ],
                             ),
-                            Image.asset("images/s2.jpg")
+                            Image.asset(profileImages[index]),
+                            Row(
+                              children: [
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(Icons.favorite_border)),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon:
+                                        const Icon(Icons.chat_bubble_outline)),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(Icons.label_outline)),
+                                const Spacer(),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(Icons.bookmark_outline))
+                              ],
+                            )
                           ],
                         )))
           ],
