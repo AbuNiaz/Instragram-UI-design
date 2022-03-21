@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instragram_ui/home_page_two.dart';
+import 'package:instragram_ui/search_page.dart';
 
 class MyHomePage extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const HomePageTwo(),
+      body: currentPage == 1 ? SearchPage() : HomePageTwo(),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
