@@ -44,7 +44,17 @@ class SearchPage extends StatelessWidget {
           SliverAppBar(
             title: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(),
+              child: Row(
+                children: List.generate(
+                    10,
+                    (index) => Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: OutlinedButton(
+                            onPressed: () {},
+                            child: Text(buttons[index]),
+                          ),
+                        )),
+              ),
             ),
           )
         ],
