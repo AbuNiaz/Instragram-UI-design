@@ -5,6 +5,18 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> buttons = [
+      "IGTV",
+      "Travel",
+      "Architecture",
+      "Decor",
+      "Style",
+      "Food",
+      "Art",
+      "Beauty",
+      "DIY",
+      "Music"
+    ];
     return Scaffold(
       body: CustomScrollView(
         slivers: [
@@ -28,6 +40,12 @@ class SearchPage extends StatelessWidget {
                 icon: const Icon(Icons.person_add),
               ),
             ],
+          ),
+          SliverAppBar(
+            title: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(),
+            ),
           )
         ],
       ),
