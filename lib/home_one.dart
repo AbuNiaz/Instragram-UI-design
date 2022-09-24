@@ -60,30 +60,32 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const Spacer(),
             IconButton(
-                onPressed: () {
-                  setState(() {
-                    currentPage = 3;
-                  });
-                },
-                icon: Icon(
-                  Icons.card_travel,
-                  color: currentPage == 3
-                      ? const Color.fromRGBO(203, 73, 101, 1)
-                      : const Color.fromRGBO(40, 40, 40, 1),
-                )),
+              onPressed: () {
+                setState(() {
+                  currentPage = 3;
+                });
+              },
+              icon: Icon(
+                Icons.card_travel,
+                color: currentPage == 3
+                    ? const Color.fromRGBO(203, 73, 101, 1)
+                    : const Color.fromRGBO(40, 40, 40, 1),
+              ),
+            ),
             const Spacer(),
             IconButton(
-                onPressed: () {
-                  setState(() {
-                    currentPage = 4;
-                  });
-                },
-                icon: Icon(
-                  Icons.person,
-                  color: currentPage == 4
-                      ? const Color.fromRGBO(203, 70, 101, 1)
-                      : const Color.fromRGBO(40, 40, 40, 1),
-                )),
+              onPressed: () {
+                setState(() {
+                  currentPage = 4;
+                });
+              },
+              icon: Icon(
+                Icons.person,
+                color: currentPage == 4
+                    ? const Color.fromRGBO(203, 70, 101, 1)
+                    : const Color.fromRGBO(40, 40, 40, 1),
+              ),
+            ),
             const Spacer(),
           ],
         ),
