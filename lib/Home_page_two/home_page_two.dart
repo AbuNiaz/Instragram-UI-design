@@ -56,32 +56,34 @@ class _HomePageTwoState extends State<HomePageTwo> {
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                    children: List.generate(
-                        8,
-                        (index) => Container(
-                            padding: const EdgeInsets.all(10),
-                            child: Column(
-                              children: [
-                                CircleAvatar(
-                                  radius: 35,
-                                  backgroundImage:
-                                      const AssetImage("images/pink.png"),
-                                  child: CircleAvatar(
-                                    radius: 32,
-                                    backgroundImage:
-                                        AssetImage(profileImages[index]),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 5,
-                                ),
-                                const Text(
-                                  "Profile Name",
-                                  style: TextStyle(
-                                      fontSize: 13, color: Colors.black87),
-                                ),
-                              ],
-                            )))),
+                  children: List.generate(
+                    8,
+                    (index) => Container(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 35,
+                            backgroundImage:
+                                const AssetImage("images/pink.png"),
+                            child: CircleAvatar(
+                              radius: 32,
+                              backgroundImage: AssetImage(profileImages[index]),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 5,
+                          ),
+                          const Text(
+                            "Profile Name",
+                            style:
+                                TextStyle(fontSize: 13, color: Colors.black87),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ),
               const Divider(),
               Column(
@@ -129,11 +131,11 @@ class _HomePageTwoState extends State<HomePageTwo> {
                         child: Column(
                           children: [
                             RichText(
-                                text: const TextSpan(
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                    ),
-                                    children: [
+                              text: const TextSpan(
+                                style: TextStyle(
+                                  color: Colors.black,
+                                ),
+                                children: [
                                   TextSpan(text: "Liked by"),
                                   TextSpan(
                                       text: " Profile name",
@@ -144,7 +146,9 @@ class _HomePageTwoState extends State<HomePageTwo> {
                                       text: " other",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold)),
-                                ])),
+                                ],
+                              ),
+                            ),
                             RichText(
                               text: const TextSpan(
                                 style: TextStyle(
